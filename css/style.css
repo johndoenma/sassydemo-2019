@@ -266,7 +266,7 @@ body {
 
 /* site navigation */
 .site-nav {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -282,7 +282,9 @@ body {
     display: block;
     padding: 1em; }
   .site-nav.active {
+    position: fixed;
     height: 100%;
+    z-index: 100;
     background: red; }
     .site-nav.active ul {
       display: block; }
@@ -292,8 +294,7 @@ body {
   position: absolute;
   top: 2em;
   right: 2em;
-  cursor: pointer;
-  background-color: #000; }
+  cursor: pointer; }
 
 section {
   padding: 6em 0;
